@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "<h1>Магазин.</h1><a href='/cart' class='btn btn-primary'>Корзина</a>"
+    return "<h1>Магазин.</h1><a href='/cart'>Корзина</a>"
 
 
 @app.route("/cart")
