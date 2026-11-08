@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интернет-магазин</title>
-</head>
-<body>
-    <h1>Магазин.</h1><a href='/cart'>Корзина</a>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Интернет-магазин{% endblock %}
+{% block content %}
+    <h1>Магазин.</h1>
+    <a href="/cart" class="cart-button">Корзина</a>
+{% endblock %}
