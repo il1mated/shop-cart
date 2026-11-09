@@ -7,9 +7,14 @@
 </head>
 <body>
     <header>
-        <a href="/">Магазин одежды</a>
-        <a href="/cart">Корзина</a>
-        {% block content %}{% endblock %}
+        <a href="{{ url_for('index') }}">Магазин одежды</a>
+        <a href="{{ url_for('cart') }}">Корзина</a>
     </header>
+    {% block content %}{% endblock %}
+    <footer>
+        Сделал: Лебедев Алексей
+        <a href="https://github.com/il1mated" target="_blank" rel="noopener">Мой GitHub</a>
+        © 2026 г.
+    </footer>
 </body>
 </html>
