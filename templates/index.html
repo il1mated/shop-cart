@@ -6,10 +6,9 @@
         {% for product in products %}
             <article class="product-card">
                 <img src="{{ url_for('static', filename='images/' ~ product.image) }}" alt="{{ product.name }}">
-                <h2>{{ product.name }}</h2>
-                <p class="price">{{ product.price }} ₽</p>
+                <h2 class="product-name-price">{{ product.name }} - {{ product.price }} ₽</h2>
                 <form action="{{ url_for('add_to_cart', product_id=product.id) }}" method="post">
-                    <button>В корзину</button>
+                    <button class="to-cart">В корзину</button>
                 </form>
             </article>
         {% endfor %}

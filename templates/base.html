@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'script.css')}}">
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
     <header>
-        <a href="{{ url_for('index') }}">Магазин одежды</a>
-        <a href="{{ url_for('cart') }}">Корзина</a>
+        <a href="{{ url_for('index') }}" class="button-to-shop">Магазин одежды</a>
+        <a href="{{ url_for('cart') }}" class="button-cart">Корзина</a>
     </header>
     {% block content %}{% endblock %}
     <footer>
